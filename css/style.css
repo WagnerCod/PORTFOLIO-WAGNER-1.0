@@ -1,0 +1,642 @@
+/* para busca de elementos coloquei a palavra chave "começo" para facilitar a busca */
+*{
+    scroll-behavior: smooth;
+}
+body {
+    max-height: 1200px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: #141414;
+
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* começo menu header */
+
+/* .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+
+
+  .header.scroll-down {
+    top: -100px; /* altura desejada quando o scroll é para baixo
+  } */
+
+.header {
+    padding: 40px 20px;
+    background-color: rgb(10, 10, 10);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 10px 20px;
+    display: block;
+    background-color: #1313169d;
+    border-radius: 5px;
+
+}
+
+.menu li a:hover {
+    color: #0CCA6C;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+}
+
+/* começo introdrução  */
+
+.invisivel h1 {
+    display: none;
+}
+
+.introducao {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.introducao h1 {
+    font-size: 70px;
+    font-family: 'Raleway 600', sans-serif;
+    line-height: 1.2;
+    color: #0CCA6C;
+
+}
+
+.introducao h2 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.introducao h3 {
+    font-size: 20px;
+    color: #494949;
+
+}
+
+.interrogacao {
+    color: #0CCA6C;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.ponto {
+    color: #0CCA6C;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+@media (max-width: 1000x) {
+
+    .introducao h1,
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .introducao h1>h2>h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .introducao img {
+        display: none;
+    }
+}
+
+/* começo sobre mim */
+
+hr {
+    width: auto;
+    height: 2px;
+    background: #acffd5;
+}
+
+.sobreMim {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.sobreMim h1 {
+    font-size: 6rem;
+    color: #38f195ec;
+    font-family: 'Noto Sans 700', sans-serif;
+    text-align: start;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 2th;
+
+
+}
+
+.sobreMim-texto {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.33;
+    max-width: 60ch;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+    .sobreMim {
+        justify-content: center;
+        display: block;
+    }
+
+    .sobreMim h1 {
+        display: none;
+    }
+
+    .invisivel h1 {
+        text-align: center;
+        font-size: 60px;
+        font-family: 'Noto Sans', sans-serif;
+        color: #38f195ec;
+        display: block;
+        padding-top: 10px;
+
+    }
+
+    .sobreMim-texto {
+        margin-bottom: 15px;
+    }
+}
+
+/* começo Experiencias */
+
+.experiencia {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.experiencia h1 {
+    font-size: 8rem;
+    color: #38f195ec;
+    font-family: 'Noto Sans 700', sans-serif;
+    text-align: start;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 2th;
+}
+
+.experiencia-texto {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.33;
+    max-width: 60ch;
+    margin-bottom: 60px;
+}
+
+/* começo experiencia empresa */
+
+.senai {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e2e2e2;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.senai::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 40px;
+    background: linear-gradient(#0CCA6C, #313131);
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.senai-ano {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+
+}
+
+.senai-titulo {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    font-family: 'Noto Sans 700', sans-serif;
+}
+
+.senai-texto {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    max-width: 40ch;
+}
+
+.senai-habilidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: start;
+
+
+}
+
+.senai-habilidade li {
+    background-color: #c0c0c0;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .experiencia {
+        display: block;
+    }
+
+    .experiencia h1 {
+        margin: 0 auto;
+        ;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .experiencia-texto {
+        margin: 0 auto;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .senai {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* começo formação */
+
+.formacao-bloco1 {
+    background-color: #141414;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+
+.formacao {
+    background: #141414;
+    color: white;
+}
+
+.formacao-container {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.titulo {
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: #273028;
+    font-family: 'Raleway 600', sans-serif;
+    word-break: break-all;
+}
+
+.lista-formacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.curso {
+    flex: 1;
+    background: #000000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    position: relative;
+}
+
+.tipo_curso {
+    font-size: 25px;
+    line-height: 30px;
+    color: #646464;
+    margin-bottom: 20px;
+
+}
+
+.nome_curso {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+
+}
+
+.instituicao {
+    font-size: 15px;
+    color: #646464;
+}
+
+.curso::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#0CCA6C, #0b3306);
+    position: absolute;
+    top: 30px;
+    left: -4px;
+}
+
+.titulo_cursoAdicional {
+    font-size: 25px;
+    color: #646464;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.titulo_cursoAdicional::before {
+    display: block;
+    content: '';
+    width: 43px;
+    height: 34px;
+    background: url("../img/formacao.svg") no-repeat center;
+    position: absolute;
+    top: -4px;
+    left: -45px;
+
+}
+
+.titulo_idiomas {
+    font-size: 25px;
+    color: #646464;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.cursos_adicionais li {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.cursos_adicionais span {
+    color: #6e6e6e;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.titulo_idiomas::before {
+    display: block;
+    content: '';
+    width: 43px;
+    height: 34px;
+    background: url("../img/idioma.svg") no-repeat center;
+    position: absolute;
+    top: -4px;
+    left: -45px;
+
+}
+
+.idiomas>ul>li {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.idiomas span {
+    color: #6e6e6e;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.cursos_adicionais li {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 700px) {
+    .formacao-container {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* começo contatos */
+
+
+.container_contatos {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.sociais{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.sociais h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 30px;
+}
+
+.links_sociais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.links_sociais img {
+    width: 50px;
+    height: 50px;
+}
+
+.contatos h3 {
+    margin-bottom: 30px;
+    color: #0CCA6C;
+}
+
+.contato {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label,
+input {
+    display: block;
+}
+
+.contato label {
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.contato span{
+    color: red;
+    font: 10px;
+    display: none;
+}
+
+.quem_contato {
+    width: 400px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.quem_contato:focus, .mensagem_contato:focus {
+  border-color: #38fa07 !important;
+}
+.quem_contato:valid, .mensagem_contato:valid{
+    border-color: green;
+}
+
+
+
+
+
+.mensagem_contato {
+    width: 400px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+
+.enviar {
+    font-weight: 200;
+    font-size: 14px;
+    margin: 0 auto;
+    background: #0CCA6C;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+@media(max-width: 800px) {
+    .container_contatos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3px;
+        justify-content: center;
+    }
+    .contato, input{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .quem_contato {
+        width: 300px;
+        height: 30px;
+        border-radius: 6px;
+    }
+    .mensagem_contato {
+        width: 300px;
+        height: 150px;
+        border-radius: 6px;
+    }
+
+        .sociais{
+            margin-bottom: 30px;
+        
+        }
+}
