@@ -1,7 +1,8 @@
 /* para busca de elementos coloquei a palavra chave "começo" para facilitar a busca */
-*{
+* {
     scroll-behavior: smooth;
 }
+
 body {
     max-height: 1200px;
     margin: 0px;
@@ -22,6 +23,7 @@ ul {
     padding: 0px;
     list-style: none;
 }
+
 
 img {
     max-width: 100%;
@@ -89,6 +91,10 @@ img {
 }
 
 /* começo introdrução  */
+
+.fotocel{
+    display: none;
+}
 
 .invisivel h1 {
     display: none;
@@ -161,8 +167,13 @@ img {
         gap: 30px;
     }
 
-    .introducao img {
+    .introducao .foto {
         display: none;
+    }
+    .fotocel{
+        margin: 0 auto;
+        display: block;
+        
     }
 }
 
@@ -526,7 +537,8 @@ hr {
     gap: 30px;
     flex-wrap: wrap;
 }
-.sociais{
+
+.sociais {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -573,7 +585,7 @@ input {
     flex-wrap: wrap;
 }
 
-.contato span{
+.contato span {
     color: red;
     font: 10px;
     display: none;
@@ -585,10 +597,13 @@ input {
     border-radius: 6px;
 }
 
-.quem_contato:focus, .mensagem_contato:focus {
-  border-color: #38fa07 !important;
+.quem_contato:focus,
+.mensagem_contato:focus {
+    border-color: #38fa07 !important;
 }
-.quem_contato:valid, .mensagem_contato:valid{
+
+.quem_contato:valid,
+.mensagem_contato:valid {
     border-color: green;
 }
 
@@ -620,23 +635,47 @@ input {
         gap: 3px;
         justify-content: center;
     }
-    .contato, input{
+
+    .contato,
+    input {
         margin: 0 auto;
         text-align: center;
     }
+
     .quem_contato {
         width: 300px;
         height: 30px;
         border-radius: 6px;
     }
+
     .mensagem_contato {
         width: 300px;
         height: 150px;
         border-radius: 6px;
     }
 
-        .sociais{
-            margin-bottom: 30px;
-        
-        }
+    .sociais {
+        margin-bottom: 30px;
+
+    }
+}
+
+/* seta */
+
+.seta {
+    width: 50px;
+}
+
+#myBtnContainer {
+
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 99;
+}
+
+#myBtn {
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/wag.icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +18,7 @@
         rel="stylesheet">
 
 
+
     <title>PORTIFÓLIO WAGNER</title>
 
 </head>
@@ -24,7 +26,7 @@
 <body>
 
     <header class="header" id="navbar">
-        <a href=""><img class="logo" src="img/WAG.svg" alt=""></a>
+        <a href=""><img class="logo" src="img/WAG.svg" id="home" alt=""></a>
 
         <nav>
             <ul class="menu">
@@ -38,6 +40,7 @@
     </header>
 
     <main class="introducao">
+        <img class="fotocel" src="img/perfil_redondo2.png" alt="">
         <img class="foto" src="img/perfil.jpg" alt="">
         <div>
             <h1>FUTURO</h1>
@@ -164,58 +167,69 @@
             <div class="sociais">
                 <h3>wvinicius.torres@gmail.com</h3>
                 <div class="links_sociais">
-                    <a href=""><img src="img/github.svg" alt=""></a>
+                    <a href="https://github.com/WagnerCod" target="_blank"><img src="img/github.svg" alt=""></a>
 
-                    <a href=""><img src="img/linkedin.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/wagner-torres-sf/" target="_blank"><img src="img/linkedin.svg"
+                            alt=""></a>
 
-                    <a href=""><img src="img/zap.svg" alt=""></a>
+                    <a href="https://contate.me/wagner_zap" target="_blank"><img src="img/zap.svg" alt=""></a>
                 </div>
             </div>
             <div class="contatos">
                 <h3>Entre em contato.</h3>
 
-                <form action="" id="form">
+                <form action="#" method="POST" id="form">
 
                     <div class="contato">
                         <label>Nome</label>
                         <input type="text" class="quem_contato validacao" oninput="nameValidate()" required
-                            maxlength="40">
+                            maxlength="40" id="nome">
                         <span class="span-required">Nome deve conter no minimo 3 caracteres e não pode conter numeros
                             nem simbolos</span>
                     </div>
 
                     <div class="contato">
                         <label class="contato">Email</label>
-                        <input type="email" class="quem_contato validacao" oninput="emailValid()" required>
+                        <input type="email" class="quem_contato validacao" oninput="emailValid()" required id="email">
                         <span class="span-required">Digite um email válido</span>
                     </div>
 
                     <div class="contato">
                         <label class="contato">Mensagem</label>
-                        <textarea type="text" class="mensagem_contato validacao" oninput="messageValid()"
-                            required></textarea>
+                        <textarea type="text" class="mensagem_contato validacao" oninput="messageValid()" required
+                            id="message"></textarea>
                         <span class="span-required">Escreva no minimo 10 caracteres!!</span>
                     </div>
 
                     <button class="enviar" type="submit">Enviar</button>
+
+
+                    <input type="hidden" name="_subject" value="NOVO CONTATO DO PORTIFÓLIO">
+                    <input type="hidden" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+
 
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- <section>
-        <button>
-            <a href=""><img src="" alt=""></a>
-        </button>
-    </section> -->
     <section>
         <h4>Projetos em andamentos</h4>
     </section>
+
+    <div id="myBtnContainer">
+        <a href="#home" onclick="topFunction()" id="myBtn" title="Inicio da página"><img src="img/subir.png"
+                title="Inicio da pagina" class="seta"></a>
+    </div>
+
     <footer class="footer">
         <h3>Alguns direitos reservado ao Wagner!</h3>
     </footer>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/receberEmail.js"></script>
+<script src="js/rolamentoButton.js"></script>
 <script type="text/javascript" src="js/rolamento.js"></script>
 <script type="text/javascript" src="js/validaForm.js"></script>
 
