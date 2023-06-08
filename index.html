@@ -17,6 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans:ital,wght@0,300;0,700;1,900&family=Raleway:wght@300&display=swap"
         rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css" rel="stylesheet">
+
 
 
     <title>PORTIFÓLIO WAGNER</title>
@@ -178,30 +180,31 @@
             <div class="contatos">
                 <h3>Entre em contato.</h3>
 
-                <form action="#" method="POST" id="form">
+                <form action="https://formspree.io/f/xnqyklrg" method="POST" id="form">
 
                     <div class="contato">
                         <label>Nome</label>
                         <input type="text" class="quem_contato validacao" oninput="nameValidate()" required
-                            maxlength="40" id="nome">
+                            maxlength="40" name="nome" id="nome">
                         <span class="span-required">Nome deve conter no minimo 3 caracteres e não pode conter numeros
                             nem simbolos</span>
                     </div>
 
                     <div class="contato">
                         <label class="contato">Email</label>
-                        <input type="email" class="quem_contato validacao" oninput="emailValid()" required id="email">
+                        <input type="email" class="quem_contato validacao" oninput="emailValidate()" required name="email"
+                            id="email">
                         <span class="span-required">Digite um email válido</span>
                     </div>
 
                     <div class="contato">
                         <label class="contato">Mensagem</label>
-                        <textarea type="text" class="mensagem_contato validacao" oninput="messageValid()" required
-                            id="message"></textarea>
+                        <textarea type="text" class="mensagem_contato validacao" oninput="messageValidate()" required
+                            name="message" id="message"></textarea>
                         <span class="span-required">Escreva no minimo 10 caracteres!!</span>
                     </div>
 
-                    <button class="enviar" type="submit">Enviar</button>
+                    <button class="enviar" type="submit" onclick="alert()">Enviar</button>
 
 
                     <input type="hidden" name="_subject" value="NOVO CONTATO DO PORTIFÓLIO">
@@ -227,7 +230,7 @@
         <h3>Alguns direitos reservado ao Wagner!</h3>
     </footer>
 </body>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
 <script src="js/receberEmail.js"></script>
 <script src="js/rolamentoButton.js"></script>
 <script type="text/javascript" src="js/rolamento.js"></script>

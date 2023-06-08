@@ -25,17 +25,19 @@ function nameValidate() { //valida nome e os simbolos que n pode entrar no campo
     }
 }
 
-function emailValid() {
+function emailValidate() {
     if (!emailRegex.test(campos[1].value)) {
         setError(1);
     } else {
         removeError(1);
     }
 }
-function messageValid() { //validação das menssagens
+function messageValidate() { //validação das menssagens
     if (campos[2].value.length < 10) {
         setError(2);
     } else {
         removeError(2);
     }
 }
+
+  
