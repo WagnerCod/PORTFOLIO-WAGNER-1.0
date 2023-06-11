@@ -92,7 +92,7 @@ img {
 
 /* começo introdrução  */
 
-.fotocel{
+.fotocel {
     display: none;
 }
 
@@ -170,10 +170,11 @@ img {
     .introducao .foto {
         display: none;
     }
-    .fotocel{
+
+    .fotocel {
         margin: 0 auto;
         display: block;
-        
+
     }
 }
 
@@ -515,6 +516,17 @@ hr {
     .titulo {
         font-size: 50px;
     }
+
+    .titulo_cursoAdicional::before {
+        position: initial;
+        margin-bottom: 5px;
+    }
+
+    .titulo_idiomas::before {
+        position: initial;
+        margin-bottom: 5px;
+    }
+
 }
 
 .footer {
